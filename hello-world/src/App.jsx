@@ -12,6 +12,9 @@ import { UserDetails } from './UserDetails';
 import { ProductList } from './ProductList';
 import {NameList} from './NameList'; 
 import { TodoList } from './TodoList';
+import { Alert } from './Alert';
+import {NewButton} from './NewButton';
+import {CustomButton} from './CustomButton';
 import './App.css'
 
 function Login() {
@@ -21,6 +24,15 @@ function Login() {
 function App() {
   return (
     <div>
+      <CustomButton text="Like"/>
+      <CustomButton text="Bookmark"/>
+
+
+      <Alert type="success">Your changes have been saved successfully!</Alert> 
+      <Alert type="error">Something went wrong!</Alert> 
+
+      <NewButton />
+
       <TodoList />
       <NameList />
       <ProductList />

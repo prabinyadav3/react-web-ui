@@ -1,0 +1,66 @@
+import { Welcome} from './Welcome';
+import Button from './Button';
+import { UserProfile } from './UserProfile';  
+import { ContactForm } from './ContactForm'; 
+import { Hello,HelloWithoutJSX } from './Hello';
+import { StyleForm } from './StyleForm';  
+import { CandidateProfile } from './CandidateProfile';  
+import { Product } from './Product';
+import { Greeting } from './Greeting'; 
+import { CardWrapper } from './CardWrapper';  
+import { UserDetails } from './UserDetails';
+import { ProductList } from './ProductList';
+import {NameList} from './NameList'; 
+import { TodoList } from './TodoList';
+import './App.css'
+
+function Login() {
+  return <button>Login</button>;
+ }   
+
+function App() {
+  return (
+    <div>
+      <TodoList />
+      <NameList />
+      <ProductList />
+      
+      <UserDetails name="Anish Yadav" isOnline={true} 
+      isPremium={true} 
+      isNewUser={true} 
+      role="admin"
+      />
+      <UserDetails name="John Doe" isOnline={true} hideOffline={true} role="VIP" />
+      
+      <CardWrapper title="User Profile"> 
+        <p>Anish</p>
+        <p>prabinyadav.com.np</p>
+        <button>Edit profile</button>
+      </CardWrapper>
+
+      <Greeting name="Alice" message="Welcome"/>
+      <Greeting name="Bob"/>
+      <Greeting message="Hello"/>
+      <Greeting />
+
+      <Product 
+      title="Nitro Laptop" price={1999.99} inStock={true} categories={["Electronics", "Computers", "Laptops"]}
+       />  
+
+       <Welcome name="Anish Yadav" alias="AnishYadav"/>
+       <Welcome name="John Doe" alias="JohnDoe"/>
+       <Welcome name="Jane Smith" alias="JaneSmith"/>
+
+      <CandidateProfile />
+      <StyleForm />
+      <ContactForm />
+      <UserProfile />
+      <Hello />
+      <HelloWithoutJSX />
+      <Button />
+      <Login />
+    </div>
+  );
+}
+
+export default App;

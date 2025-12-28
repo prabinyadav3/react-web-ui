@@ -15,6 +15,9 @@ import { TodoList } from './TodoList';
 import { Alert } from './Alert';
 import {NewButton} from './NewButton';
 import {CustomButton} from './CustomButton';
+import {Newsletter} from './Newsletter'; 
+import {Contact} from './Contact';
+import { Menu } from './Menu';
 import './App.css'
 
 function Login() {
@@ -24,6 +27,12 @@ function Login() {
 function App() {
   return (
     <div>
+      <Menu />
+      
+      <Contact />
+      <Newsletter />
+
+      <CustomButton text="Submit"/> 
       <CustomButton text="Like"/>
       <CustomButton text="Bookmark"/>
 

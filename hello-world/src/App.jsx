@@ -18,6 +18,8 @@ import {CustomButton} from './CustomButton';
 import {Newsletter} from './Newsletter'; 
 import {Contact} from './Contact';
 import { Menu } from './Menu';
+import { Counter } from './Counter';
+import { LoginCard } from './LoginCard';
 import './App.css'
 
 function Login() {
@@ -27,6 +29,11 @@ function Login() {
 function App() {
   return (
     <div>
+      <LoginCard />
+
+      <Counter />
+      <Counter />
+
       <Menu />
       
       <Contact />

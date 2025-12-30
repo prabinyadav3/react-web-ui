@@ -20,6 +20,8 @@ import {Contact} from './Contact';
 import { Menu } from './Menu';
 import { Counter } from './Counter';
 import { LoginCard } from './LoginCard';
+import { SimpleCounter } from './SimpleCounter';
+import { UserDashboard } from './UserDashboard';
 import './App.css'
 
 function Login() {
@@ -29,6 +31,11 @@ function Login() {
 function App() {
   return (
     <div>
+      <SimpleCounter />
+
+      <UserDashboard isPremium={true} />
+      <UserDashboard isPremium={false} />
+
       <LoginCard />
 
       <Counter />

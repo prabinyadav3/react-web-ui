@@ -23,6 +23,7 @@ import { LoginCard } from './LoginCard';
 import { SimpleCounter } from './SimpleCounter';
 import { UserDashboard } from './UserDashboard';
 import { PrevStateCounter } from './PrevStateCounter';
+import { BatchingCounter } from './BatchingCounter';
 import './App.css'
 
 function Login() {
@@ -32,6 +33,7 @@ function Login() {
 function App() {
   return (
     <div>
+      <BatchingCounter />
       <PrevStateCounter />
       <SimpleCounter />
 

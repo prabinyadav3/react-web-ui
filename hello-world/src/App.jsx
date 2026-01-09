@@ -25,6 +25,7 @@ import { UserDashboard } from './UserDashboard';
 import { PrevStateCounter } from './PrevStateCounter';
 import { BatchingCounter } from './BatchingCounter';
 import { ShoppingCart } from './ShoppingCart'; 
+import { CounterWithReducer } from './CounterWithReducer';
 import './App.css'
 
 function Login() {
@@ -34,7 +35,10 @@ function Login() {
 function App() {
   return (
     <div>
+      <CounterWithReducer />
+
     <ShoppingCart />
+    
       <BatchingCounter />
       <PrevStateCounter />
       <SimpleCounter />

@@ -24,6 +24,7 @@ import { SimpleCounter } from './SimpleCounter';
 import { UserDashboard } from './UserDashboard';
 import { PrevStateCounter } from './PrevStateCounter';
 import { BatchingCounter } from './BatchingCounter';
+import { ShoppingCart } from './ShoppingCart'; 
 import './App.css'
 
 function Login() {
@@ -33,6 +34,7 @@ function Login() {
 function App() {
   return (
     <div>
+    <ShoppingCart />
       <BatchingCounter />
       <PrevStateCounter />
       <SimpleCounter />
@@ -53,6 +55,8 @@ function App() {
       <CustomButton text="Submit"/> 
       <CustomButton text="Like"/>
       <CustomButton text="Bookmark"/>
+
+     
 
 
       <Alert type="success">Your changes have been saved successfully!</Alert> 

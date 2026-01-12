@@ -27,6 +27,8 @@ import { BatchingCounter } from './BatchingCounter';
 import { ShoppingCart } from './ShoppingCart'; 
 import { CounterWithReducer } from './CounterWithReducer';
 import { ShoppingCartWithReducer } from './ShoppingCartWithReducer';
+import { CounterWithInit } from './CounterWithInit';
+import { CustomCounter } from './CustomCounter';
 import './App.css'
 
 function Login() {
@@ -36,11 +38,13 @@ function Login() {
 function App() {
   return (
     <div>
+      <CustomCounter /> 
+      <CounterWithInit />
       <ShoppingCartWithReducer/>
+
       <CounterWithReducer />
 
-    <ShoppingCart />
-    
+      <ShoppingCart />
       <BatchingCounter />
       <PrevStateCounter />
       <SimpleCounter />
